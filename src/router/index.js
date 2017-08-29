@@ -29,13 +29,14 @@ export default new Router({
     {
       path: '/login',
       name: 'login',
-      component: compLoad('login')
+      component: viewLoad('login')
     },
     {
-      path: '/vuex1',
-      name: 'vuex1',
-      component: compLoad('vuex1')
+      path: '/myinfo',
+      name: 'myinfo',
+      component: viewLoad('myinfo')
     },
+  
     {
       path: '/compDemo',
       name: 'compDemo',

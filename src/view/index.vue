@@ -2,8 +2,8 @@
   <div class="index">
     <h1 class="m-h1">基本应用实践</h1>
     <router-link :to="'/booklist'" >书籍列表</router-link>
-    <router-link :to="'/login'" >vuex实践</router-link>
-    <router-link :to="'/vuex1'" >vuex实践1</router-link>
+    <router-link :to="'/login'" >登录</router-link>
+    <router-link :to="'/myinfo'" >登录后的</router-link>
     <router-link :to="'/compDemo'" >components组件实践</router-link>
   </div>
 </template>

@@ -6,9 +6,9 @@ import api from './api.js'
 
 export default new Vuex.Store({
     state: {
-        loginname: localStorage.getItem('loginname')||'xxx',
+        loginname: localStorage.getItem('loginname')?localStorage.getItem('loginname'):'xxx',
         count: '0',
-        accesstoken:localStorage.getItem('token')|| '',
+        token:localStorage.getItem('token')?localStorage.getItem('token'): '',
 
     },
     mutations: {
@@ -22,7 +22,7 @@ export default new Vuex.Store({
             localStorage.setItem('loginname', loginmsg.loginname);
             localStorage.setItem('token', loginmsg.token);
             state.loginname = loginmsg.loginname;
-            state.accesstoken = loginmsg.token;
+            state.token = loginmsg.token;
         },
         
     },
